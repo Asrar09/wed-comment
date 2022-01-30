@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { dummyComment } from './dummy';
 
 @Injectable()
 export class AppService {
