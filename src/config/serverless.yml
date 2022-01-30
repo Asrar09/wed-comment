@@ -1,0 +1,16 @@
+service:
+  name: aws-nestjs-dynamodb
+
+plugins:
+  - serverless-pligin-typescript
+  - serverless-plugin-optimize
+  - serverless-offline
+
+provider:
+  name: aws
+  tracing:
+    apiGateway: true
+  runtime: nodejs12.x
+  memorysize: 256
+  stage: ${opt:stage, 'dev'}
+  region: us-east
